@@ -1,0 +1,25 @@
+No console do navegador, você precisará criar uma 
+const minhaConta = new [contaBancaria / contaPoupanca / contaUniversitaria](agencia, numero, true)
+
+após escolher a sua conta, exemplo:
+
+const minhaConta = new contaUniversitaria(1, 244, true)
+
+você terá as opções de (sempre que escolher, digite a sua const "." ação):
+sacar, depositar e ver.
+
+Exemplo:
+
+minhaConta.depositar(1200)
+//será depositado 1200 na sua conta, lembrando que ao criar, sempre será 0
+
+minhaConta.saldo
+//retornará o valor do seu saldo, nesse exemplo, voltará 1200
+
+minhaConta.sacar(500)
+//tirará 500 do saldo, nesse caso sobrando 700
+
+minhaConta.sacar 550
+//retornará "Operação inválida", pois criei uma conta Universiatária, onde não pode tirar mais do que 500 reiais.
+
+Regra extra: não é possível sacar mais do que há no saldo.
